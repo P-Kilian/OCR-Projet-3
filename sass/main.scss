@@ -1,0 +1,30 @@
+@import "./utils/_variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+@mixin flex {
+    display: flex;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+  }
+.container {
+  border: solid 2px black;
+  width: 100%;
+}
+.header {
+    font-family: 'Shrikhand', cursive;
+
+    &__logo {
+      align-items: center;
+    }
+}
+
+.rest__grid__card__img {
+  @include flex();
+  align-items: center;
+  width: 300px;
+  height: 180px;
+  object-fit: cover ;
+  object-position: 100% 60%;
+}
