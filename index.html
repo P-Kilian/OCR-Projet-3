@@ -4,38 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Oh my food !</title>
 </head>
+
 <body>
-    <header>
-        <div class="Title">
-            <h1>Title</h1>
-        </div>
-
-        <div class="location">
-            <p>Location</p>
-        </div>
+    <header class="header">
+        <a href="#">
+            <img class="header__image" src="./images/logo/ohmyfood.png" alt="Ohmyfood">
+        </a>
     </header>
+    
     <main>
-        <div class="fonctionnement">
-            <div class="Content">
-                <p>fonctionnement</p>
-            </div>
-                <p>Location</p>
-            <div class="button">
-                <p>Location</p>
-            </div>
-        </div>
-        <div class="Restaurants">
-            <div container card>
+        <section class="container">
+            <form class="loc__bar">
+                    <div class="loc__bar__icone"></div>
+                    <div class="loc__bar__input">Paris,Belleville</div>
+            </form>
+        </section>
 
+        <section class="container">
+            <div class="res">
+                <H1 class="res__heading">
+                    Réservez le menu qui vous convient
+                </H1>
+                <p class="res__text">
+                    Découvrez des restaurants d'exception, séectionnés pqr nos soins.
+                </p>
+                <button class="res__btn" type="button" onclick="alert('Filler!')">Explorer nos Restaurants</button>
             </div>
-        </div>
+        </section>
+
+        <section class="container">
+            <div class="fonc">
+                <h2 class="fonc__title">Fonctionnement</h2>
+
+                <ol class="fonc__list">
+                    <li class="fonc__step">
+                        <i class="fonc__step__icon"></i>
+                        <p class="fonc__step__text">Choisissez un restaurant</p>
+                    </li>
+                    <li class="tuto__step">
+                        <i class="fonc__step__icon"></i>
+                        <p class="fonc__step__text">Composez votre menu</p>
+                    </li>
+                    <li class="tuto__step">
+                        <i class="fonc__step__icon"></i>
+                        <p class="fonc__step__text">Dégustez au restaurant</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="rest">
+                <h2 class="rest__title">Restaurants</h2>
+
+                <div class="rest__grid">
+                    <div class="rest__grid__card">
+                        <img class="rest__grid__card__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Avatar">
+                        <div class="rest__grid__card__desc">
+                            <div class="rest__grid__card__desc__text"><h4><b>John Doe</b></h4></div>
+                            <div class="rest__grid__card__desc__hearth"><p>Architect & Engineer</p></div>
+                        </div>
+                    </div> 
+                    <div class="rest__grid__card">
+                        <img class="rest__grid__card__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Avatar">
+                        <div class="rest__grid__card__desc">
+                            <div class="rest__grid__card__desc__text"><h4><b>John Doe</b></h4></div>
+                            <div class="rest__grid__card__desc__hearth"><p>Architect & Engineer</p></div>
+                        </div>
+                    </div> 
+                    <div class="rest__grid__card flex">
+                        <img class="rest__grid__card__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Avatar">
+                        <div class="rest__grid__card__desc flex">
+                            <div class="rest__grid__card__desc__text flex"><h4><b>John Doe</b></h4></div>
+                            <div class="rest__grid__card__desc__hearth flex"><p>Architect & Engineer</p></div>
+                        </div>
+                    </div> 
+                    <div class="rest__grid__card flex">
+                        <img class="rest__grid__card__img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Avatar">
+                        <div class="rest__grid__card__desc flex">
+                            <div class="rest__grid__card__desc__text flex"><h4><b>John Doe</b></h4></div>
+                            <div class="rest__grid__card__desc__hearth flex"><p>Architect & Engineer</p></div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <footer class="container">
+            ohmyfood
+        </footer>
     </main>
-    <footer>
-        <div>
-            list
-        </div>
-    </footer>
 </body>
 </html>
