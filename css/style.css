@@ -1,39 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.container {
-  height: 100%;
-}
-
-html, body {
-  font-family: "Roboto", sans-serif;
-  margin: auto;
-  width: 584px;
-  text-align: center;
-}
-
-h1, h2 {
-  font-family: "Shrikhand";
-  margin: 0;
-  padding: 0;
-}
-
 .header {
-  padding: 10px;
-  box-shadow: 0px 2px #E0E0E0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
 }
 .header__img {
   display: flex;
   flex-flow: row wrap;
   margin: auto;
-  padding: 10px;
+  width: 60%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .loc {
@@ -48,6 +25,9 @@ h1, h2 {
 .rest {
   background: #F7F7F7;
 }
+.rest__title {
+  text-align: left;
+}
 .rest__grid {
   display: grid;
   grid-gap: 1rem;
@@ -56,10 +36,10 @@ h1, h2 {
 .card {
   display: flex;
   flex-flow: row wrap;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  border: 1px solid black;
   border-radius: 1rem;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
 }
 .card__img {
   align-items: center;
@@ -73,12 +53,42 @@ h1, h2 {
   justify-content: space-around;
   text-align: left;
   padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .footer {
   background: #353535;
   color: #FEFEFE;
   text-align: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  height: 100%;
+  padding: 0 20px;
+}
+
+html, body {
+  margin: auto;
+  width: 380px;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: "Shrikhand";
+}
+
+h3, h4, p {
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

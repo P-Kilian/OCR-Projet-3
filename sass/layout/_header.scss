@@ -1,0 +1,16 @@
+@import "../utils/mixins";
+
+.header{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid ;
+  
+    &__img{
+      @include flex;
+
+      margin: auto;
+      width: 60%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
