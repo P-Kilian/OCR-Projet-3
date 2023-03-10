@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/056b7e5332.js" crossorigin="anonymous"></script>
     <title>Oh my food !</title>
 </head>
 
@@ -21,7 +22,7 @@
         <section class="loc">
             <div class="container">
                 <form class="loc__bar">
-                        <div class="loc__bar__icone"></div>
+                        <div class="loc__bar__ico"><i class="fa-solid fa-location-dot"></i></div>
                         <div class="loc__bar__input"><h3>Paris,Belleville</h3></div>
                 </form>
             </div>
@@ -31,27 +32,30 @@
             <div class="container">
                 <H3 class="res__heading">Réservez le menu qui vous convient</H3>
                 <p class="res__text">
-                    Découvrez des restaurants d'exception, séectionnés pqr nos soins.
+                    Découvrez des restaurants d'exception, sélectionnés par nos soins.
                 </p>
-                <button class="res__btn" type="button" onclick="alert('Filler!')">Explorer nos Restaurants</button>
+                <button class="button" type="button" onclick="alert('Filler!')">Explorer nos Restaurants</button>
             </div>
         </section>
 
         <section class="fonc">
             <div class="container">
-                <h4 class="fonc__title">Fonctionnement</h4>
+                <h3 class="fonc__title">Fonctionnement</h3>
 
-                <ul class="fonc__list">
+                <ol class="fonc__list">
                     <li class="fonc__step">
+                        <i class="fa-solid fa-mobile-screen-button fonc__step__icon"></i>
                         <p class="fonc__step__text">Choisissez un restaurant</p>
                     </li>
                     <li class="fonc__step">
+                        <i class="fa-solid fa-list fonc__step__icon"></i>
                         <p class="fonc__step__text">Composez votre menu</p>
                     </li>
                     <li class="fonc__step">
+                        <i class="fa-solid fa-store fonc__step__icon"></i>
                         <p class="fonc__step__text">Dégustez au restaurant</p>
                     </li>
-                </ul>
+                </ol>
             </div>
         </section>
 
@@ -93,7 +97,7 @@
         </section>
         <footer class="footer">
             <div class="container">
-                <span class="footer__logo"><h2>ohmyfood</h2></span>
+                <img class="footer__logo" src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
                 <ul class="footer__list">
                     <li class="footer__list__elem">
                       Proposer un restaurant

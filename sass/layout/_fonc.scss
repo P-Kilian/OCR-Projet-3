@@ -1,0 +1,58 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.fonc {
+    padding-bottom: 30px;
+
+    &__list {
+        @include flex;
+
+        flex-direction: column;
+    }
+
+    li:nth-child(3) {
+        background: #F5EDFF;
+       }
+
+    &__step {
+        @include flex;
+
+        margin: 25px 0 0 0;
+        background-color: #F7F7F7;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0,0.2);
+        font-weight: bold;
+
+        counter-increment: step-counter;
+
+        &::before {
+            content: counter(step-counter);
+            font-family: "roboto";
+            font-weight: lighter ;
+            font-size: small;
+
+            position: relative;
+            right: 30px;
+            line-height: 1.6rem;
+
+            background: $primaire;
+            color: white;
+            border-radius: 50%;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+        &__icon {
+            transform: scale(130%);
+            position: relative;
+            top: 2px;
+            left: 5px;
+            padding-right: 2rem;
+            color: #7E7E7E;
+
+        &.fa-store {
+                color: $primaire;
+                  }
+        }
+    }
+}
