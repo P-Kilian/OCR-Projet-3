@@ -6,7 +6,7 @@
 }
 .header__img {
   margin: auto;
-  width: 60%;
+  width: 50%;
   height: 100%;
   object-fit: contain;
 }
@@ -36,7 +36,7 @@
   text-align: center;
   margin: auto;
   width: 80%;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .res__text {
   font-size: 18px;
@@ -44,15 +44,13 @@
 }
 
 .fonc {
-  padding-bottom: 30px;
+  height: 100%;
 }
 .fonc__list {
   display: flex;
   flex-flow: row wrap;
   flex-direction: column;
-}
-.fonc li:nth-child(3) {
-  background: #F5EDFF;
+  padding-bottom: 60px;
 }
 .fonc__step {
   display: flex;
@@ -63,6 +61,7 @@
   padding: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   font-weight: bold;
+  font-size: normal;
   counter-increment: step-counter;
 }
 .fonc__step::before {
@@ -80,15 +79,17 @@
   width: 1.5rem;
 }
 .fonc__step__icon {
-  transform: scale(130%);
-  position: relative;
-  top: 2px;
-  left: 5px;
-  padding-right: 2rem;
+  transform: scale(120%);
   color: #7E7E7E;
 }
 .fonc__step__icon.fa-store {
   color: #9356DC;
+}
+.fonc__step:nth-child(3) {
+  background: #F5EDFF;
+}
+.fonc__step__text {
+  padding-left: 1.5rem;
 }
 
 .rest {
@@ -172,8 +173,8 @@
 
 html, body {
   margin: auto;
-  min-width: 380px;
-  max-width: 768px;
+  min-width: 320px;
+  max-width: 480px;
   text-align: center;
 }
 

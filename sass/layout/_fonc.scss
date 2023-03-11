@@ -2,17 +2,15 @@
 @import "../utils/variables";
 
 .fonc {
-    padding-bottom: 30px;
+
+    height: 100%;
 
     &__list {
         @include flex;
-
         flex-direction: column;
+        padding-bottom: 60px;
     }
 
-    li:nth-child(3) {
-        background: #F5EDFF;
-       }
 
     &__step {
         @include flex;
@@ -23,6 +21,7 @@
         padding: 20px;
         box-shadow: 5px 5px 5px rgb(0, 0, 0,0.2);
         font-weight: bold;
+        font-size: normal;
 
         counter-increment: step-counter;
 
@@ -43,16 +42,20 @@
             width: 1.5rem;
         }
         &__icon {
-            transform: scale(130%);
-            position: relative;
-            top: 2px;
-            left: 5px;
-            padding-right: 2rem;
+            transform: scale(120%);
             color: #7E7E7E;
 
         &.fa-store {
-                color: $primaire;
-                  }
+            color: $primaire;
+              }
+        }
+
+        &:nth-child(3) {
+            background: #F5EDFF;
+        }
+
+        &__text {
+            padding-left: 1.5rem;
         }
     }
 }
