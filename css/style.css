@@ -18,12 +18,7 @@
 .loc__bar {
   display: flex;
   flex-flow: row wrap;
-  margin: auto;
-  width: 100%;
-  justify-content: space-between;
-}
-.loc__bar__ico {
-  margin: auto;
+  justify-content: center;
 }
 
 .res {
