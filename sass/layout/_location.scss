@@ -3,9 +3,15 @@
 .loc {
     background: #EAEAEA;
     height: 100%;
+    padding: 50px 0;
 
     &__bar {
       @include flex;
       justify-content: center;
+
+      &__input {
+        border: none;
+        background: none;
+      }
     }
   }

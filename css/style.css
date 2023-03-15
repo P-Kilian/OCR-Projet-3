@@ -14,11 +14,16 @@
 .loc {
   background: #EAEAEA;
   height: 100%;
+  padding: 50px 0;
 }
 .loc__bar {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+.loc__bar__input {
+  border: none;
+  background: none;
 }
 
 .res {
